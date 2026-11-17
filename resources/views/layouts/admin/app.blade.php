@@ -41,28 +41,25 @@
 </head>
 
 <body>
-    <!-- start sidebar -->
-   @include('layouts.admin.css')
-    <!-- end sidebar -->
+
+    <!-- Start Sidebar -->
+    @include('layouts.admin.sidebar')
 
     <main class="content">
 
-        <!-- start header -->
-       @include('layouts.admin.header')
-        <!-- end header -->
+        <!-- Start Header -->
+        @include('layouts.admin.header')
 
-        <!-- start main content -->
+        <!-- Start Main Content -->
         @yield('content')
-        <!-- end main content -->
 
-            <!-- start footer -->
+        <!-- Start Footer -->
         @include('layouts.admin.footer')
-        <!-- end footer -->
-    </main>
-<!-- 
-        start js -->
-   @include('layouts.admin.js')
-    <!-- end js -->
-</body>
 
+    </main>
+
+    <!-- Start JS -->
+    @include('layouts.admin.js')
+
+</body>
 </html>
